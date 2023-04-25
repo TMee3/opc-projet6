@@ -1,0 +1,10 @@
+{
+  "name": "opc-projet6",
+  "version": "1.0",
+  "description": "Projet 6 du parcours développeur web d'Openclassroom",
+  "main": "scripts.js",
+  "scripts": {
+    "sass" : "sass --watch style.scss:.css/style.css"
+  },
+  "author": "Théo Pidoux"
+}

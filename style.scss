@@ -1,0 +1,149 @@
+// Variables
+$background-box-color: rgb(24, 135, 168);
+$text-color: rgb(0, 0, 0);
+$button-color: rgb(15, 179, 179);
+$background-color: rgba($background-box-color, 0.7);
+$font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+// Global styles
+body {
+background-color: $background-color;
+}
+
+h1,
+.header__title {
+font-family: $font;
+color: $text-color;
+}
+
+.header {
+border-radius: 10px;
+color: $text-color;
+background-color: $background-box-color;
+display: flex;
+height: 150px;
+justify-content: space-between;
+align-items: flex-end;
+margin-bottom: 15px;
+
+&__nav {
+display: flex;
+justify-content: space-between;
+margin-right: 10px;
+}
+
+&__category {
+margin-right: 15px;
+}
+}
+
+#bestMovieBlock {
+background-color: $background-box-color;
+font-family: $font;
+color: $text-color;
+border-radius: 10px;
+height: 15%;
+width: 500px;
+text-align: center;
+align-items: center;
+padding: 5px;
+margin: auto;
+}
+
+// Styles pour la modale
+.modal {
+display: none;
+position: fixed;
+z-index: 1;
+bottom: 0;
+right: 0;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+overflow: auto;
+
+&__content {
+font-family: $font;
+background-color: $background-box-color;
+color: $text-color;
+margin: 15% auto;
+padding: 20px;
+border-radius: 10px;
+width: 50%;
+}
+
+&__list {
+list-style-type: none;
+text-align: justify;
+margin: 0;
+padding: 0;
+}
+}
+
+.close {
+color: $text-color;
+font-size: 28px;
+font-weight: bold;
+
+&:hover,
+&:focus {
+color: black;
+text-decoration: none;
+cursor: pointer;
+}
+}
+
+.imgPreview:hover {
+transform: scale(1.1);
+transition: 0.1s;
+}
+
+.images {
+&__BM,
+&__AM,
+&__T,
+&__H {
+display: flex;
+}
+}
+
+.btn {
+border-radius: 10px;
+background-color: $button-color;
+font-family: $font;
+color: #fff;
+height: 30px;
+
+&:hover {
+background-color: darken($button-color, 10%);
+}
+
+&:focus {
+outline: none;
+}
+}
+
+#caroussel {
+&__BM,
+&__AM,
+&__T,
+&__H {
+display: flex;
+justify-content: space-around;
+}
+}
+
+.arrow {
+&__left,
+&__right {
+margin-top: 140px;
+}
+}
+
+#gallery {
+&__BM {
+display: flex;
+justify-content: space-around;
+}
+}
