@@ -4,7 +4,7 @@
   "description": "Projet 6 du parcours développeur web d'Openclassroom",
   "main": "scripts.js",
   "scripts": {
-    "sass" : "sass --watch style.scss:.css/style.css"
+    "sass" : "sass --watch style.scss:css/style.css"
   },
   "author": "Théo Pidoux"
 }
